@@ -25,10 +25,6 @@ namespace StateMachine_Test
             {
                 m.Configure(State.Idle)
                 .Permit(Action.Initialize, State.Initializing)
-                .OnEntry(() =>
-                {
-
-                })
                 .OnExit(() =>
                 {
                     MessageBox.Show("Exiting Idle...");
